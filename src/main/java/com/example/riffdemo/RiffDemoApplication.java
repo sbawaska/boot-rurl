@@ -17,8 +17,7 @@ public class RiffDemoApplication {
     private static final int HASH_LENGTH = 8;
     private static final String DOMAIN_NAME = "http://r.url/";
 
-    @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplate restTemplate = new RestTemplate();
 
     @Bean
     public Function<String, String> shortUrl() {
